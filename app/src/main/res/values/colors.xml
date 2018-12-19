@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#81D4FA</color>
+    <color name="colorPrimaryDark">#00574b</color>
+    <color name="colorAccent">#FFFF</color>
+    <color name="recycler">#FFFF</color>
+    <color name="BottomLinearLayout">#81D4FA</color>
+    <color name="listItem">#424242</color>
+    <color name="listItemPurchased">#00574b</color>
+    <color name="listItemTextColor">#ffff</color>
+    <color name="checkboxTint">#ffff</color>
+
+
+</resources>

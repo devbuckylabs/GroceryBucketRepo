@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:letterSpacing="0.01"
+                android:layout_weight="1"
+                android:text="Grocery List" />
+
+            <CheckBox
+                android:id="@+id/menu_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_delete_black_24dp" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1500"
+        android:background="@color/recycler">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            tools:listitem="@layout/recycler_view_item">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@color/BottomLinearLayout"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        tools:background="@color/BottomLinearLayout">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="14dp"
+            android:layout_toStartOf="@+id/button1"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="bottom"
+            android:hint="Add New Item"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:windowSoftInputMode="adjustPan" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="39dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/BottomLinearLayout"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:text="Button" />
+
+    </LinearLayout>
+
+</LinearLayout>
